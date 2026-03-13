@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Local Dictionary",
+  "version": "1.0",
+  "description": "Define words from a local JSON dictionary",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ]
+}

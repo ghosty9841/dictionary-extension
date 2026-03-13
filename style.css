@@ -1,0 +1,112 @@
+.dictionary-popup {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 2147483647;
+  font-family: Arial, sans-serif;
+}
+
+.dictionary-popup__content {
+  position: relative;
+  width: 320px;
+  max-width: calc(100vw - 40px);
+  padding: 16px;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  color: #111111;
+}
+
+.dictionary-popup__toolbar {
+  display: flex;
+  gap: 8px;
+  margin: 0 34px 12px 0;
+}
+
+.dictionary-popup__action {
+  border: 1px solid #d4d4d4;
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dictionary-popup__action:hover {
+  background: #f3f3f3;
+}
+
+.dictionary-popup__action--primary {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+}
+
+.dictionary-popup__action--primary:hover {
+  background: #333333;
+}
+
+.dictionary-popup__title {
+  margin: 0 28px 8px 0;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.dictionary-popup__definition {
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+
+.dictionary-popup__history-list {
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.dictionary-popup__history-item {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fafafa;
+  color: #111111;
+  text-align: left;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.dictionary-popup__history-item:hover {
+  background: #f1f1f1;
+}
+
+.dictionary-popup__empty,
+.dictionary-popup__status {
+  margin: 0;
+  line-height: 1.45;
+  color: #444444;
+}
+
+.dictionary-popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0;
+  background: transparent;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dictionary-popup__close:hover {
+  background: #f1f1f1;
+}
